@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::post('/create','ExamsController@createExam');
+Route::get('/get', 'ExamsController@getExams');
+Route::post('/delete/{id}', 'ExamsController@deleteExam');
+Route::post('/update/{id}', 'ExamsController@editExam');
+
