@@ -99,7 +99,7 @@
                         v-model="newExam.option4">
                 </div>
                 <div class="form-group">
-                    <label for="category">Option 4</label>
+                    <label for="category">Category</label>
                     <!-- <input type="text" class="form-control" id="category" required placeholder="Category" name="option" v-model="newExam.category"> -->
                     <select class="form-control" id="category" required name="option" v-model="newExam.category">
                         <option value=technical">Technical</option>
