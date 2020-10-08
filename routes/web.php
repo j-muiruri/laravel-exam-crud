@@ -18,8 +18,8 @@ Route::get('/', function () {
 });
 
 
-Route::post('/create','ExamsController@createExam');
-Route::get('/get', 'ExamsController@getExams');
-Route::post('/delete/{id}', 'ExamsController@deleteExam');
-Route::post('/update/{id}', 'ExamsController@editExam');
+Route::post('/create','App\Http\Controllers\ExamsController@createExam');
+Route::get('/get', 'App\Http\Controllers\ExamsController@getExams');
+Route::post('/delete/{id}', 'App\Http\Controllers\ExamsController@deleteExam');
+Route::post('/update/{id}', 'App\Http\Controllers\ExamsController@editExam');
 
